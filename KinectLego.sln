@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFKinect", "WPFKinect\WPFKinect.csproj", "{217609EA-E30D-4AA1-B8F3-BA8810ECBD2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawKinect", "DrawKinect\DrawKinect.csproj", "{62DBA07D-1203-4F21-BF0E-8F6C1A983F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lego.Ev3.Desktop", "Lego.Ev3.Desktop\Lego.Ev3.Desktop.csproj", "{79C444DE-86F1-4AFF-903A-4B6ED31655EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotCore", "RobotCore\RobotCore.csproj", "{9D439258-C521-4F29-A8C8-D0039A0BE52F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{217609EA-E30D-4AA1-B8F3-BA8810ECBD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217609EA-E30D-4AA1-B8F3-BA8810ECBD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217609EA-E30D-4AA1-B8F3-BA8810ECBD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217609EA-E30D-4AA1-B8F3-BA8810ECBD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62DBA07D-1203-4F21-BF0E-8F6C1A983F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62DBA07D-1203-4F21-BF0E-8F6C1A983F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62DBA07D-1203-4F21-BF0E-8F6C1A983F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62DBA07D-1203-4F21-BF0E-8F6C1A983F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79C444DE-86F1-4AFF-903A-4B6ED31655EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79C444DE-86F1-4AFF-903A-4B6ED31655EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79C444DE-86F1-4AFF-903A-4B6ED31655EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79C444DE-86F1-4AFF-903A-4B6ED31655EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D439258-C521-4F29-A8C8-D0039A0BE52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D439258-C521-4F29-A8C8-D0039A0BE52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D439258-C521-4F29-A8C8-D0039A0BE52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D439258-C521-4F29-A8C8-D0039A0BE52F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+﻿<Window x:Class="WPFKinect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lego Drawing" Height="600" Width="1300" Loaded="StartKinect" Closing="StopKinect">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!-- Canvas -->
+        <Canvas Name="mCanvasImageKinect"/>
+        <Canvas Grid.Column="2" Name="mCanvasDessin"/>
+        <!-- Status & boutons -->
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="mTextBlockStatusKinect" Width="250" Margin="5" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Text="Robot Lego : Non connecté" Name="mTextBlockStatusLego" Margin="5" Width="250" VerticalAlignment="Center"/>
+            <WrapPanel Grid.Column="2" VerticalAlignment="Center">
+                <Button Content="Start" Style="{StaticResource StyleBouton}" Click="StartStream"/>
+                <Button Content="Stop" Style="{StaticResource StyleBouton}" Click="StopStream"/>
+                <Button Content="Connnect Lego" Style="{StaticResource StyleBouton}" Click="ConnectLego"/>
+                <Button Content="Clear" Style="{StaticResource StyleBouton}" Click="ClearDrawing"/>
+                <Button Content="End" Style="{StaticResource StyleBouton}" Click="EndApplication"/>
+            </WrapPanel>
+        </Grid>
+        <!-- Taille de la feuille et dessin -->
+        <WrapPanel Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5">
+            <StackPanel>
+                <TextBlock Text="Taille de la feuille :" FontSize="16" VerticalAlignment="Center" Margin="5"/>
+                <TextBlock Text="(placer la feuille en mode paysage" Margin="1"/>
+                <TextBlock Text="et le robot au centre, orienté vers la haut)" Margin="1"/>
+            </StackPanel>
+            
+            <ComboBox Width="50" Margin="10" Height="25" Name="mComboBoxTailleFeuille" SelectionChanged="SizeComboBoxModified"/>
+            <TextBlock Text="Largeur :" Margin="5" VerticalAlignment="Center"/>
+            <TextBox Name="mTextBoxLargeur" Height="20" Width="50"/>
+            <TextBlock Text="cm" VerticalAlignment="Center"/>
+            <Separator Visibility="Hidden" Width="80"/>
+            <TextBlock Text="Longueur :" Margin="5" VerticalAlignment="Center"/>
+            <TextBox Name="mTextBoxLongueur" Height="20" Width="50"/>
+            <TextBlock Text="cm" VerticalAlignment="Center"/>
+            <Separator Visibility="Hidden" Width="50"/>
+            <Button Content="Draw (Echantillon)" Margin="10" Width="110" Height="30" Click="DrawEchantillon"/>
+            <Button Content="Draw (Points Distants)" Margin="10" Width="130" Height="30" Click="DrawPointsDistants"/>
+        </WrapPanel>
+    </Grid>
+</Window>
